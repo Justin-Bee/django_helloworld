@@ -1,18 +1,25 @@
 <!doctype html>
 <title>CodeMirror: Python mode</title>
 <head>
-    <script src="/static/lib/codemirror.js"></script>
+<script type="text/javascript" src="/static/lib/codemirror.js"></script>
 <link rel="stylesheet" type="text/css" href="/static/lib/codemirror.css">
-<script src="/static/mode/python/python.js"></script>
+<script type="text/javascript" src="/static/mode/python/python.js"></script>
 <style>
     body{
-        background-color: #eee;
+        background-color: #eeeeee;
     }
 </style>
 </head>
 <body>
-<div id="codeeditor"></div>
-    <script>
-      var editor = CodeMirror(document.getElementById("codeeditor"));
+<div id="codeeditor" class="CodeMirror"></div>
+    <script type="text/javascript">
+    var config, editor;
+    config = {
+        linenumbers: true,
+        mode: "python"
+    };
+    
+    editor = CodeMirror(document.getElementById("codeeditor"), config);
+
     </script>
 </body></html>
