@@ -2,7 +2,7 @@
 <title>CodeMirror: Python mode</title>
 
 <head>
-<link rel="stylesheet" type="text/css" href="/static/themes/darcula.css">
+<link rel="stylesheet" href="/static/themes/darcula.css">
 <script type="text/javascript" src="/static/lib/codemirror.js"></script>
 <link rel="stylesheet" type="text/css" href="/static/lib/codemirror.css">
 <script type="text/javascript" src="/static/mode/python/python.js"></script>
@@ -14,7 +14,8 @@
     var config, editor;
     config = {
         linenumbers: true,
-        mode: "python"
+        mode: "python",
+        theme: "darcula"
     };
     
     editor = CodeMirror(document.getElementById("codeeditor"), config);
