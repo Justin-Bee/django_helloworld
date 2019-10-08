@@ -1,0 +1,31 @@
+/* variables */
+@body-bg-color: #83b692;
+@text-color: #fff;
+@keyword: "import";
+
+.orangeText{
+    color: orange;
+}
+
+
+body {
+    background: @body-bg-color;
+    color: @text-color;
+}
+
+textarea {
+   // color: if("import", #83b, #83b692);
+    outline: none;
+    resize: none;
+    word-wrap: true;
+
+}
+
+//mixin for keywords
+.ifString(@word) when (isstring(@word)) {
+    color: #83b;
+}
+
+
+
+
